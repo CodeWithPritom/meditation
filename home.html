@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindfulSpace | Meditate & Relax</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Poppins:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="loader-inner">
+                <div class="loader-line-wrap" style="--i:0">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap" style="--i:1">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap" style="--i:2">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap" style="--i:3">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap" style="--i:4">
+                    <div class="loader-line"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <img src="assets/logo.svg" alt="MindfulSpace" height="30" id="logo-img">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="meditation.html#meditate">Meditate</a></li>
+                    <li class="nav-item"><a class="nav-link" href="meditation.html#sleep">Sleep</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4 animate__animated animate__fadeInUp">Find Peace in Every Breath
+                    </h1>
+                    <p class="lead mb-4 animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">MindfulSpace
+                        helps you build a meditation habit with guided sessions, sleep stories, and mindfulness courses.
+                    </p>
+
+                    <div class="d-flex gap-3 animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
+                        <a href="meditation.html" class="btn btn-primary btn-lg rounded-pill px-4"
+                            id="start-meditating-btn">Start Meditating</a>
+                        <a href="#benefits" class="btn btn-outline-light btn-lg rounded-pill px-4" id="tour-btn">Learn
+                            More</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="woman.png" alt="Woman meditating" class="img-fluid animate__animated animate__fadeIn"
+                        style="animation-delay: 0.6s; max-height: 450px;">
+                </div>
+            </div>
+        </div>
+        <div class="wave-divider">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path
+                    d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                    opacity=".25" fill="currentColor"></path>
+                <path
+                    d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                    opacity=".5" fill="currentColor"></path>
+                <path
+                    d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                    fill="currentColor"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="benefits-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Why Meditate Daily?</h2>
+                <p class="section-subtitle">Science-backed benefits of a regular practice</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <h3>Reduces Stress</h3>
+                        <p>Lower cortisol levels and decrease inflammation in the body with regular practice.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>Improves Focus</h3>
+                        <p>Enhance your attention span and concentration through mindfulness techniques.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-moon"></i>
+                        </div>
+                        <h3>Better Sleep</h3>
+                        <p>Quiet your mind and prepare your body for deeper, more restful sleep.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meditation Player Section (Visuals and Breathing Animation) -->
+    <section class="meditation-player-section py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="meditation-player">
+                        <div class="player-header text-center">
+                            <h3 id="session-title">Mindful Breathing Exercise</h3>
+                            <p id="session-details">Focus on your breath</p>
+                        </div>
+
+                        <div class="player-visualization">
+                            <canvas id="visualizer"></canvas>
+                            <div class="breathing-animation">
+                                <div class="circle outer"></div>
+                                <div class="circle middle"></div>
+                                <div class="circle inner"></div>
+                                <div class="breath-instruction">Breathe In</div>
+                            </div>
+                        </div>
+
+                        <!-- Main Audio Element (hidden controls, controlled by popup cross) -->
+                        <audio id="main-audio" src="assets/audio/guitar.mp3"></audio>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Stats Section -->
+    <section class="stats-section py-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3 col-6">
+                    <div class="stat-item">
+                        <h3 class="stat-number" data-count="500">0</h3>
+                        <p class="stat-label">Meditations</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-item">
+                        <h3 class="stat-number" data-count="50">0</h3>
+                        <p class="stat-label">Teachers</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-item">
+                        <h3 class="stat-number" data-count="1.2" data-suffix="M">0</h3>
+                        <p class="stat-label">Users</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-item">
+                        <h3 class="stat-number" data-count="100">0</h3>
+                        <p class="stat-label">Countries</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="about-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MjF8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+                        alt="About MindfulSpace" class="img-fluid rounded">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="section-title text-start">My Mission</h2>
+                    <p>MindfulSpace was founded in 2020 with a simple goal: to make mindfulness meditation accessible to
+                        everyone, regardless of experience level or background.</p>
+                    <p>I believe that a regular meditation practice can transform lives by reducing stress, improving
+                        focus, and fostering compassion. I work with meditation teachers, neuroscientists, and
+                        developers to create evidence-based content that's both effective and engaging.
+                        </p>
+                    <p>All of my content is available for free because I believe mental wellbeing shouldn't come with
+                        a price tag. I'm supported by my community of donors who share my vision.</p>
+                    <button class="btn btn-primary mt-3" id="meet-teachers-btn">Meet My Teachers</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section py-5">
+        <div class="container">
+            <div class="newsletter-box rounded p-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h3>Join My Community</h3>
+                        <p>Subscribe to receive weekly mindfulness tips, exclusive content, and updates from me.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <form class="newsletter-form" id="newsletter-form">
+                            <div class="input-group">
+                                <input type="email" class="form-control" placeholder="Your email address"
+                                    id="newsletter-email" required>
+                                <button class="btn btn-primary" type="submit">Subscribe</button>
+                            </div>
+                            <div class="form-check mt-2">
+                                <input class="form-check-input" type="checkbox" value="" id="privacy-check" required>
+                                <label class="form-check-label" for="privacy-check">
+                                    I agree to the privacy policy
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <img src="assets/logo-white.svg" alt="MindfulSpace" height="30" class="mb-3">
+                    <p>Helping you find peace and clarity through mindfulness meditation since 2020.</p>
+                    <div class="social-links mt-3">
+                        <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link" aria-label="Spotify"><i class="fab fa-spotify"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mb-4">
+                    <h5>Explore</h5>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="meditation.html#meditate">Meditate</a></li>
+                        <li><a href="meditation.html#sleep">Sleep</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+                <!-- In home.html, meditation.html footers -->
+                <div class="col-lg-2 col-md-4 col-6 mb-4">
+                    <h5>Company</h5>
+                    <ul class="footer-links">
+                        <li><a href="about.html" id="about-link-footer">About Me</a></li>
+                        <li><a href="mission.html" id="mission-link">My Mission</a></li>
+                        <li><a href="contact.html" id="contact-link">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- In footers of all pages -->
+                <div class="col-lg-2 col-md-4 col-6 mb-4">
+                    <h5>Support</h5>
+                    <ul class="footer-links">
+                        <li><a href="help.html" id="help-link">Help Center</a></li>
+                        <li><a href="faq.html" id="faq-link">FAQ</a></li>
+                        <li><a href="donate.html" id="donate-link">Donate</a></li>
+                        <li><a href="feedback.html" id="feedback-link">Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mb-4">
+                    <h5>Download</h5>
+                    <div class="app-download">
+                        <a href="#" class="d-block mb-2" id="app-store-link">
+                            <img src="assets/app-store.svg" alt="App Store" class="img-fluid">
+                        </a>
+                        <a href="#" class="d-block" id="google-play-link">
+                            <img src="assets/google-play.svg" alt="Google Play" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Announcement Popup -->
+    <div id="announcement-popup" style="display:flex;align-items:center;justify-content:center;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(30,40,60,0.85);z-index:9999;flex-direction:column;">
+        <div style="background:#fff;border-radius:18px;box-shadow:0 8px 32px rgba(0,0,0,0.18);padding:2rem 2.5rem;max-width:90vw;display:flex;flex-direction:column;align-items:center;position:relative;">
+            <button id="announcement-close-btn" aria-label="Close announcement" style="position:absolute;top:12px;right:12px;background:none;border:none;font-size:1.7rem;color:#888;cursor:pointer;z-index:2;">&times;</button>
+            <div style="position:relative;display:flex;align-items:center;justify-content:center;">
+                <span class="glow-bg"></span>
+                <img src="meditate.png" alt="MindfulSpace" class="glow-float-img" style="height:400px;margin-bottom:1rem;position:relative;z-index:1;">
+            </div>
+            <h4 style="color:#2E3440;margin-bottom:0.5rem;">Welcome to MindfulSpace!</h4>
+            <p style="color:#4C6A8C;text-align:center;max-width:350px;">Start your journey to mindfulness. Enjoy free meditations, sleep sounds, and more. Click the cross to begin and background music will start automatically.</p>
+        </div>
+    </div>
+    <style>
+        .glow-bg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 400px; /* Increased size */
+            height: 400px; /* Increased size */
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            background: radial-gradient(circle at 50% 50%, #aee9f7 0%, #7fc8f8 60%, #b7b7f7 100%);
+            filter: blur(70px); /* Increased blur */
+            opacity: 0.7;
+            z-index: 0;
+            animation: glowPulse 2.5s ease-in-out infinite alternate;
+        }
+        @keyframes glowPulse {
+            0% { opacity: 0.7; filter: blur(70px);} /* Increased blur */
+            100% { opacity: 1; filter: blur(100px);} /* Increased blur */
+        }
+        .glow-float-img {
+            animation: floatY 3.5s ease-in-out infinite alternate;
+        }
+        @keyframes floatY {
+            0% { transform: translateY(0);}
+            100% { transform: translateY(-24px);}
+        }
+    </style>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Small script for current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Ensure popup works on GitHub Pages
+        document.addEventListener('DOMContentLoaded', function() {
+            const popup = document.getElementById('announcement-popup');
+            const closeBtn = document.getElementById('announcement-close-btn');
+            const mainAudio = document.getElementById('main-audio');
+            
+            if (popup && closeBtn) {
+                closeBtn.addEventListener('click', function() {
+                    popup.style.display = 'none';
+                    if (mainAudio) {
+                        mainAudio.play().catch(function(error) {
+                            console.log("Audio play failed:", error);
+                        });
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
