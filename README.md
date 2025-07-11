@@ -1,6 +1,3 @@
-# meditation
-Find calm, clarity, and balance through guided meditation. Our platform offers tools, sessions, and resources to help you reduce stress, improve focus, and reconnect with yourself—anytime, anywhere.
-
 <div align="center">
 
 # 🧘‍♀️ Serenity | Your Meditation Companion
@@ -25,7 +22,7 @@ Welcome to **Serenity**, a modern, elegant, and responsive meditation website bu
 - 🌙 **Dark Mode Support**
 - 📱 **Responsive Design (Mobile-Friendly)**
 - ⏱️ **Session Timers**
-- 🗓️ **Daily Meditation Tracker**
+
 
 ---
 
@@ -33,7 +30,7 @@ Welcome to **Serenity**, a modern, elegant, and responsive meditation website bu
 
 | Homepage                | Guided Session             | Mobile View              |
 |------------------------|----------------------------|--------------------------|
-| ![Homepage](./screenshots/home.png) | ![Session](./screenshots/session.png) | ![Mobile](./screenshots/mobile.png) |
+| ![Homepage](./assets/images/home.png) | ![Session](./assets/images/guide.png) | ![Mobile](./assets/images/mobile.jpg) |
 
 ---
 
@@ -45,10 +42,3 @@ Welcome to **Serenity**, a modern, elegant, and responsive meditation website bu
 
 ---
 
-## 🚀 Getting Started
-
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/serenity-meditation.git
-
-# Open index.html in your browser
